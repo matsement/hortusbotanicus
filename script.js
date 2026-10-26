@@ -55,7 +55,7 @@ const translations = {
     "notice.open": "Open all year round, in every season.",
     "notice.link": "Plan your visit",
     "discover.kicker": "Heritage and future",
-    "discover.title": "The Hortus has always been a place where plants, science and society meet.",
+    "discover.title": "From 2026 to 2050, the Hortus becomes the Green Heart of Technology.",
     "timeline.title": "From the history garden to the living lab",
     "zones.title": "Garden zones",
     "open.kicker": "Open all year round",
@@ -93,7 +93,7 @@ const translations = {
     "notice.open": "Het hele jaar open, in elk seizoen.",
     "notice.link": "Plan uw bezoek",
     "discover.kicker": "Erfgoed en toekomst",
-    "discover.title": "De Hortus is altijd al een plek geweest waar planten, wetenschap en samenleving samenkomen.",
+    "discover.title": "Van 2026 tot 2050 wordt de Hortus het Green Heart of Technology.",
     "timeline.title": "Van historische tuin naar living lab",
     "zones.title": "Tuinzones",
     "open.kicker": "Het hele jaar open",
@@ -104,22 +104,7 @@ const translations = {
   }
 };
 
-const IMAGES = {
-  hero: { src: "assets/images/hero.jpg", alt: "Hortus greenhouse with a path and planting beds" },
-  intro: { src: "assets/images/intro.jpg", alt: "Historic greenhouse and public path at the Hortus" },
-  abe: { src: "assets/images/exh-abe.jpg", alt: "Architecture and urban biodiversity concept" },
-  ceg: { src: "assets/images/exh-ceg.jpg", alt: "Water and soil adaptation design" },
-  eemcs: { src: "assets/images/exh-eemcs.jpg", alt: "AI sensor and biodiversity monitoring installation" },
-  ide: { src: "assets/images/exh-ide.jpg", alt: "Bio-inclusive façade prototype" },
-  ae: { src: "assets/images/exh-ae.jpg", alt: "Satellite and habitat monitoring visualisation" },
-  as: { src: "assets/images/exh-as.jpg", alt: "Synthetic biology and plant metabolism lab" },
-  me: { src: "assets/images/exh-me.jpg", alt: "Biomimicry and robotic systems in a greenhouse" },
-  tpm: { src: "assets/images/exh-tpm.jpg", alt: "Policy and ethics discussion around returned species" },
-  partner_band: { src: "assets/images/partners.jpg", alt: "Partner network and collaboration visuals" },
-  support: { src: "assets/images/support.jpg", alt: "Supporters gathering in the botanical garden" },
-  visit: { src: "assets/images/visit.jpg", alt: "Visitor route and Hortus entrance" }
-};
-
+// IMAGES is defined in images.js (loaded before this file).
 const state = {
   lang: localStorage.getItem("hortus-lang") || "en",
   contrast: localStorage.getItem("hortus-contrast") === "true"
