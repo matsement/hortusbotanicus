@@ -1,77 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>README | Hortus Botanicus 2050</title>
-    <meta name="description" content="Documentation for the Hortus Botanicus 2050 design concept website.">
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <div class="container readme-wrap">
-      <h1>Hortus Botanicus 2050 — future redesign</h1>
-      <p>This is a static multi-page concept website inspired by the TU Delft Hortus Botanicus as it might exist in 2050, designed as a fictional but realistic institutional website.</p>
+# Hortus Botanicus 2050 redesign
 
-      <h2>Open the site</h2>
-      <ol>
-        <li>Open <code>index.html</code> directly in a browser, or</li>
-        <li>Host the folder on GitHub Pages or any static host.</li>
-      </ol>
+This static site is a single-page concept for the TU Delft Hortus Botanicus in 2050.
 
-      <h2>Deploy on GitHub Pages</h2>
-      <ol>
-        <li>Push this repository to GitHub.</li>
-        <li>Open the repository settings.</li>
-        <li>Go to Pages and choose the main branch / root folder.</li>
-        <li>Save. The site will be served at your GitHub Pages URL.</li>
-      </ol>
+## Files
+- index.html: the full single-page site
+- style.css: all styling
+- script.js: menu, filters, language toggle, contrast toggle, agenda, scenario tool, reservation logic
+- images.js: image paths and alt text
 
-      <h2>Add your photos</h2>
-      <p>All image paths live in one config file: <code>js/images.js</code>. Follow this workflow:</p>
-      <ol>
-        <li>Place your photo in the matching subfolder under <code>assets/images/</code>.</li>
-        <li>Rename the file to match the key you want to use.</li>
-        <li>Update the path in <code>IMAGES</code> in <code>js/images.js</code>.</li>
-      </ol>
+## How to add photos
+1. Put your own image files in `assets/images/`.
+2. Add a matching key in `images.js`.
+3. Use the key in the HTML with `data-img="your-key"`.
+4. Keep the file name and aspect ratio consistent with the intended layout.
 
-      <h2>Image key table</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Image key</th>
-            <th>What it should show</th>
-            <th>Recommended size / ratio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>hero.main</td><td>Wide greenhouse scene with futuristic AR overlay</td><td>1600×900, 16:9</td></tr>
-          <tr><td>garden.main</td><td>View across the living garden zones</td><td>1600×900, 16:9</td></tr>
-          <tr><td>research.main</td><td>Researchers studying a plant or sensor array</td><td>1600×900, 16:9</td></tr>
-          <tr><td>exhibitions.main</td><td>Faculty exhibition hall with people exploring</td><td>1600×900, 16:9</td></tr>
-          <tr><td>experience.main</td><td>Immersive installation or future scenario display</td><td>1600×900, 16:9</td></tr>
-          <tr><td>events.main</td><td>Event scene with visitors in the Hortus</td><td>1600×900, 16:9</td></tr>
-          <tr><td>partners.main</td><td>Collaboration network or group meeting</td><td>1600×900, 16:9</td></tr>
-          <tr><td>visit.main</td><td>Entrance, signage, or visitor path</td><td>1600×900, 16:9</td></tr>
-          <tr><td>support.main</td><td>Community volunteers or donation moment</td><td>1600×900, 16:9</td></tr>
-          <tr><td>education.main</td><td>Students or children learning in the garden</td><td>1600×900, 16:9</td></tr>
-        </tbody>
-      </table>
+## Image keys and subject suggestions
+- hero: main hero image, 3:2
+- intro: heritage and future image, 3:2
+- abe: Architecture and the Built Environment, 4:3
+- ceg: Civil Engineering and Geosciences, 4:3
+- eemcs: EEMCS sensors and AI, 4:3
+- ide: bio-inclusive façade, 4:3
+- ae: Earth observation and habitat mapping, 4:3
+- as: synthetic biology and plant metabolism, 4:3
+- me: robotics and biomimicry, 4:3
+- tpm: ethics and policy, 4:3
+- partner_band: partner network and collaboration, 16:9
+- support: supporters and donations, 4:3
+- visit: visitor entrance and wayfinding, 3:2
 
-      <h2>Edit content</h2>
-      <p>Editable content lives in the <code>data/</code> folder as JavaScript data files, designed to work without a build step and without <code>fetch</code> from a local file:</p>
-      <ul>
-        <li><code>data/site.js</code> — site text, opening hours, stats, and hero data</li>
-        <li><code>data/events.js</code> — all agenda events</li>
-        <li><code>data/exhibitions.js</code> — faculty exhibitions and filters</li>
-        <li><code>data/partners.js</code> — partner content and categories</li>
-      </ul>
+## GitHub Pages deployment
+1. Push these files to the GitHub Pages branch or default branch.
+2. In the repository settings, enable GitHub Pages.
+3. Use the default root folder for a static site.
+4. Open the published URL to view the page.
 
-      <h2>Assumptions</h2>
-      <ul>
-        <li>This is a fictional future-concept website, not the official TU Delft site.</li>
-        <li>Some content is intentionally aspirational and editable.</li>
-        <li>Photo files are placeholders by default until you add your own images.</li>
-      </ul>
-    </div>
-  </body>
-</html>
+This is a fictional 2050 design concept, not the official TU Delft site.
