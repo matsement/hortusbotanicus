@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TU Delft | Hortus Botanicus 2050</title>
+    <meta name="description" content="A future-vision redesign of the TU Delft Hortus Botanicus website: The Green Heart of Technology." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/images.js" defer></script>
+    <script src="data/site.js" defer></script>
+    <script src="data/events.js" defer></script>
+    <script src="data/exhibitions.js" defer></script>
+    <script src="data/partners.js" defer></script>
+    <script src="js/site.js" defer></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span class="topbar-label">TU Delft | Hortus Botanicus 2050</span>
+        <div class="topbar-actions">
+          <button class="language-toggle" data-lang-toggle aria-label="Toggle language">NL</button>
+          <button class="contrast-toggle" data-contrast-toggle aria-label="Toggle high contrast">High contrast</button>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Home">
+          <span class="brand-mark">TD</span>
+          <span class="brand-text">
+            <strong>TU Delft</strong>
+            <small>Hortus Botanicus 2050</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="discover.html" data-i18n="nav.discover">Discover</a>
+          <a href="research.html" data-i18n="nav.research">Research</a>
+          <a href="exhibitions.html" data-i18n="nav.exhibitions">Exhibitions</a>
+          <a href="experience.html" data-i18n="nav.experience">Experience</a>
+          <a href="agenda.html" data-i18n="nav.agenda">Agenda</a>
+          <a href="partners.html" data-i18n="nav.partners">Partners</a>
+          <a href="support.html" data-i18n="nav.support">Support</a>
+          <a href="visit.html" data-i18n="nav.visit">Plan your visit</a>
+          <a href="education.html" data-i18n="nav.education">Education</a>
+        </nav>
+
+        <div class="header-tools">
+          <label class="search-box" aria-label="Search">
+            <span>Search</span>
+            <input type="search" data-search-input placeholder="Search…" />
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-home">
+        <div class="hero-backdrop" data-bg="hero.main"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow" data-i18n="hero.eyebrow">The Green Heart of Technology</span>
+            <h1 data-i18n="hero.title">The Green HEart of Technology</h1>
+            <p data-i18n="hero.subtitle">From plant to technology: let yourself be surprised. Open all year round.</p>
+            <div class="cta-row">
+              <a href="visit.html" class="btn btn-primary" data-i18n="hero.cta1">Plan your visit</a>
+              <a href="experience.html" class="btn btn-secondary" data-i18n="hero.cta2">Explore the experiences</a>
+            </div>
+          </div>
+          <aside class="today-card glass-card">
+            <div class="card-header">
+              <span class="status-dot"></span>
+              <strong data-i18n="today.title">Today in the Hortus</strong>
+            </div>
+            <div class="hours-line">
+              <span data-i18n="today.hours">Opening hours</span>
+              <strong data-today-hours>09:00–18:00</strong>
+            </div>
+            <p data-today-activity>AI-managed nature demo • Living Lab Greenhouse</p>
+            <div class="mini-weather">
+              <span>🌤</span>
+              <span data-today-weather>19°C • bright</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="notice-band">
+        <div class="container notice-inner">
+          <strong data-i18n="notice.title">Open 365 days a year, rain or shine, in every season.</strong>
+          <a href="visit.html" class="inline-link" data-i18n="notice.link">Plan your visit</a>
+        </div>
+      </section>
+
+      <section class="quick-links container">
+        <div class="section-heading compact">
+          <p class="eyebrow" data-i18n="quicklinks.eyebrow">Quick links</p>
+          <h2 data-i18n="quicklinks.title">Direct naar</h2>
+        </div>
+        <div class="quick-grid">
+          <a class="quick-card" href="visit.html">
+            <span>01</span>
+            <h3 data-i18n="quick.plan">Plan your visit</h3>
+          </a>
+          <a class="quick-card" href="agenda.html">
+            <span>02</span>
+            <h3 data-i18n="quick.agenda">Agenda</h3>
+          </a>
+          <a class="quick-card" href="visit.html#directions">
+            <span>03</span>
+            <h3 data-i18n="quick.directions">Directions</h3>
+          </a>
+          <a class="quick-card" href="visit.html#rental">
+            <span>04</span>
+            <h3 data-i18n="quick.rental">Venue rental</h3>
+          </a>
+          <a class="quick-card" href="experience.html">
+            <span>05</span>
+            <h3 data-i18n="quick.tours">Guided tours</h3>
+          </a>
+        </div>
+      </section>
+
+      <section class="container intro-block">
+        <div class="intro-copy">
+          <p class="eyebrow" data-i18n="intro.eyebrow">A living bridge between nature and innovation</p>
+          <h2 data-i18n="intro.title">More than 100 years of botanical research, reimagined for the climate century.</h2>
+          <p data-i18n="intro.text1">The Hortus Botanicus has been a place of experimentation, observation, and public wonder for over a century. Wild plants once moved from field to factory, and now they guide a new era of climate resilience, biotechnology, and eco-innovation.</p>
+          <p data-i18n="intro.text2">In 2050, the Hortus is the Green Heart of Technology: a living laboratory where biodiversity and digital systems meet, and where visitors can touch the future of nature.</p>
+        </div>
+        <div class="stats-grid glass-card">
+          <div>
+            <strong>120+</strong>
+            <span>Years of botanical research</span>
+          </div>
+          <div>
+            <strong>52</strong>
+            <span>Live demos this month</span>
+          </div>
+          <div>
+            <strong>8</strong>
+            <span>Faculty collaborations</span>
+          </div>
+          <div>
+            <strong>1</strong>
+            <span>Green heart for Delft</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="frontier.eyebrow">Frontier themes</p>
+            <h2 data-i18n="frontier.title">What’s growing in our future garden?</h2>
+          </div>
+          <div class="card-grid theme-grid">
+            <article class="feature-card card-1">
+              <span class="tag">01</span>
+              <h3>De-extinction</h3>
+              <p>Reviving lost species responsibly with biodiversity-first ethics.</p>
+              <a href="research.html#de-extinction">Explore</a>
+            </article>
+            <article class="feature-card card-2">
+              <span class="tag">02</span>
+              <h3>Novel ecosystems</h3>
+              <p>Designing resilient habitats and observing how life adapts.</p>
+              <a href="research.html#novel-ecosystems">Explore</a>
+            </article>
+            <article class="feature-card card-3">
+              <span class="tag">03</span>
+              <h3>AI-managed nature</h3>
+              <p>Sensor networks and machine learning guiding ecological care.</p>
+              <a href="research.html#ai-managed-nature">Explore</a>
+            </article>
+            <article class="feature-card card-4">
+              <span class="tag">04</span>
+              <h3>Synthetic biology</h3>
+              <p>Engineered organisms solving the climate crisis with care.</p>
+              <a href="research.html#synthetic-biology">Explore</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell alt-shell">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-i18n="events.eyebrow">Featured events</p>
+              <h2 data-i18n="events.title">This season at the Hortus</h2>
+            </div>
+            <a href="agenda.html" class="inline-link" data-i18n="events.seeall">See all agenda</a>
+          </div>
+          <div class="card-grid event-grid" data-featured-events></div>
+        </div>
+      </section>
+
+      <section class="container month-strip-shell">
+        <div class="month-strip glass-card">
+          <div class="strip-heading">
+            <p class="eyebrow">This month</p>
+            <h3>Agenda highlights</h3>
+          </div>
+          <div class="agenda-strip" id="home-agenda-strip"></div>
+        </div>
+      </section>
+
+      <section class="section-shell">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="faculties.eyebrow">Faculty exhibitions</p>
+            <h2 data-i18n="faculties.title">Eight faculties, one future story.</h2>
+          </div>
+          <div class="faculty-grid" data-faculty-preview></div>
+        </div>
+      </section>
+
+      <section class="section-shell alt-shell partner-shell">
+        <div class="container">
+          <div class="section-heading split-heading">
+            <div>
+              <p class="eyebrow" data-i18n="partners.eyebrow">Partners</p>
+              <h2 data-i18n="partners.title">The Green Heart connects Delft and the world.</h2>
+            </div>
+            <a href="partners.html" class="inline-link" data-i18n="partners.link">Meet our partners</a>
+          </div>
+          <div class="logo-strip" data-partner-strip></div>
+        </div>
+      </section>
+
+      <section class="cta-banner container">
+        <div class="cta-inner glass-card">
+          <div>
+            <p class="eyebrow">Envision 2050</p>
+            <h2>What if cities were designed around biodiversity first?</h2>
+          </div>
+          <a href="experience.html" class="btn btn-primary">Try the scenario lab</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>TU Delft | Hortus Botanicus 2050</h3>
+          <p>Poortlandplein 6, 2628 BM Delft</p>
+          <p>+31 15 278 23 56</p>
+          <p>hortus@tudelft.nl</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="visit.html">Plan your visit</a></li>
+            <li><a href="visit.html#directions">Directions</a></li>
+            <li><a href="visit.html#accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Campus map</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>Disclaimer: This is a fictional 2050 future-vision concept for a design project, not the official TU Delft website.</small>
+      </div>
+    </footer>
+  </body>
+</html>
