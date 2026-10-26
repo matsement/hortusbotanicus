@@ -1,38 +1,24 @@
 # Hortus Botanicus 2050 redesign
 
-This static site is a single-page concept for the TU Delft Hortus Botanicus in 2050.
+This static site is a fictional 2050 concept for the TU Delft Hortus Botanicus as the "Green Heart of Technology." It uses plain HTML, CSS and JavaScript only and is designed to run directly on GitHub Pages with no build step.
 
 ## Files
-- index.html: the full single-page site
-- style.css: all styling
-- script.js: menu, filters, language toggle, contrast toggle, agenda, scenario tool, reservation logic
-- images.js: image paths and alt text
+- `index.html` – the single-page landing experience with exactly five content sections and a footer.
+- `style.css` – all visual design, responsive layout, and motion styles.
+- `script.js` – minimal interactive behavior for sticky nav, mobile menu, reveal animations, and image binding.
+- `images.js` – single source of truth for image paths and alt text.
+- `images/pexels-reson-life-43382172-13601096.jpg` – the current portrait hero photo used across all slots.
 
-## How to add photos
-1. Put your own image files in `assets/images/`.
-2. Add a matching key in `images.js`.
-3. Use the key in the HTML with `data-img="your-key"`.
-4. Keep the file name and aspect ratio consistent with the intended layout.
-
-## Image keys and subject suggestions
-- hero: main hero image, 3:2
-- intro: heritage and future image, 3:2
-- abe: Architecture and the Built Environment, 4:3
-- ceg: Civil Engineering and Geosciences, 4:3
-- eemcs: EEMCS sensors and AI, 4:3
-- ide: bio-inclusive façade, 4:3
-- ae: Earth observation and habitat mapping, 4:3
-- as: synthetic biology and plant metabolism, 4:3
-- me: robotics and biomimicry, 4:3
-- tpm: ethics and policy, 4:3
-- partner_band: partner network and collaboration, 16:9
-- support: supporters and donations, 4:3
-- visit: visitor entrance and wayfinding, 3:2
+## Swap the image later
+1. Put your replacement image in the `images/` folder.
+2. Update the matching entry in `images.js` by changing `src` and `alt`.
+3. Keep the same key names and use them in HTML with `data-img="your-key"`.
+4. Because the repo currently uses one portrait image, the design relies on CSS crop and positioning to keep it looking intentional across the page.
 
 ## GitHub Pages deployment
-1. Push these files to the GitHub Pages branch or default branch.
-2. In the repository settings, enable GitHub Pages.
-3. Use the default root folder for a static site.
-4. Open the published URL to view the page.
+1. Commit these files to the repository's default branch or a Pages-enabled branch.
+2. In GitHub, open the repository settings and enable GitHub Pages.
+3. Choose the root folder for the static site if you are publishing from the default branch.
+4. Save the site and open the generated GitHub Pages URL.
 
-This is a fictional 2050 design concept, not the official TU Delft site.
+This is a fictional design concept and not the official TU Delft site.
