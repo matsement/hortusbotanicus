@@ -1,53 +1,18 @@
 const IMAGES = {
-  hero: {
-    main: "assets/images/hero/hero-main.jpg",
-    alt: "Visitors in the 2050 greenhouse"
-  },
-  garden: {
-    main: "assets/images/garden/garden-main.jpg",
-    alt: "A future garden with living systems and biodiverse planting",
-    zonePlaceholder: "assets/images/garden/zone-placeholder.jpg"
-  },
-  research: {
-    main: "assets/images/research/research-main.jpg",
-    alt: "Researchers working with advanced plant technologies"
-  },
-  exhibitions: {
-    main: "assets/images/exhibitions/exhibitions-main.jpg",
-    alt: "Faculty exhibition hall in the Hortus",
-    architecture: "assets/images/exhibitions/architecture.jpg",
-    civil: "assets/images/exhibitions/civil.jpg",
-    eemcs: "assets/images/exhibitions/eemcs.jpg",
-    ide: "assets/images/exhibitions/ide.jpg",
-    aerospace: "assets/images/exhibitions/aerospace.jpg",
-    applied: "assets/images/exhibitions/applied.jpg",
-    mechanical: "assets/images/exhibitions/mechanical.jpg",
-    tpm: "assets/images/exhibitions/tpm.jpg"
-  },
-  experience: {
-    main: "assets/images/experience/experience-main.jpg",
-    alt: "Immersive future scenario installation"
-  },
-  events: {
-    main: "assets/images/events/events-main.jpg",
-    alt: "A public event in the future Hortus"
-  },
-  partners: {
-    main: "assets/images/partners/partners-main.jpg",
-    alt: "Organized partnership network with multiple institutions"
-  },
-  support: {
-    main: "assets/images/support/support-main.jpg",
-    alt: "Volunteers and supporters at the Hortus"
-  },
-  education: {
-    main: "assets/images/people/education-main.jpg",
-    alt: "Students learning in the botanic garden"
-  },
-  visit: {
-    main: "assets/images/garden/visit-main.jpg",
-    alt: "Visitors exploring the Hortus entrance area"
-  }
+  hero:    { src: "assets/images/hero.jpg", alt: "Main greenhouse image" },
+  intro:   { src: "assets/images/intro.jpg", alt: "Historic Hortus greenhouse and path" },
+  garden:  { src: "assets/images/garden.jpg", alt: "Botanical garden and visitor route" },
+  abe:     { src: "assets/images/exh-abe.jpg", alt: "Architecture and nature-inclusive design exhibition" },
+  ceg:     { src: "assets/images/exh-ceg.jpg", alt: "Civil engineering, water and soil adaptation exhibition" },
+  eemcs:   { src: "assets/images/exh-eemcs.jpg", alt: "AI and sensor monitoring for biodiversity" },
+  ide:     { src: "assets/images/exh-ide.jpg", alt: "Bio-inclusive façade and industrial design prototype" },
+  ae:      { src: "assets/images/exh-ae.jpg", alt: "Earth observation and habitat monitoring" },
+  as:      { src: "assets/images/exh-as.jpg", alt: "Applied sciences synthetic biology and plant metabolism" },
+  me:      { src: "assets/images/exh-me.jpg", alt: "Mechanical engineering robotics and biomimicry" },
+  tpm:     { src: "assets/images/exh-tpm.jpg", alt: "Technology, policy and ethics around returned species" },
+  partners:{ src: "assets/images/partners.jpg", alt: "Collaboration between faculties and partner organisations" },
+  support: { src: "assets/images/support.jpg", alt: "Supporters and volunteers in the Hortus" },
+  visit:   { src: "assets/images/visit.jpg", alt: "Visitor route and entrance to the Hortus" }
 };
 
 window.IMAGES = IMAGES;
