@@ -1,31 +1,43 @@
 const IMAGES = {
   hero: {
     src: "images/pexels-reson-life-43382172-13601096.jpg",
-    alt: "The Hortus greenhouse in a bright public setting"
+    alt: "Visitors exploring a bright greenhouse within the Hortus Botanicus"
   },
-  exhibition_feature: {
+  exhibition_1: {
     src: "images/pexels-reson-life-43382172-13601096.jpg",
-    alt: "Featured exhibition scene in the Hortus"
+    alt: "Architecture and the Built Environment exhibition scene"
   },
-  exhibition_news_1: {
+  exhibition_2: {
     src: "images/pexels-reson-life-43382172-13601096.jpg",
-    alt: "Nature-inclusive urban future exhibition"
+    alt: "Civil Engineering and Geosciences greenhouse and water system scene"
   },
-  exhibition_news_2: {
+  exhibition_3: {
     src: "images/pexels-reson-life-43382172-13601096.jpg",
-    alt: "Living lab greenhouse and public ecology demo"
+    alt: "EEMCS data-driven biodiversity exhibition scene"
   },
-  exhibition_news_3: {
+  exhibition_4: {
     src: "images/pexels-reson-life-43382172-13601096.jpg",
-    alt: "Public event and Visitor gathering in the Hortus"
+    alt: "Industrial Design Engineering future habitat exhibition scene"
   },
-  research_1: {
+  exhibition_5: {
     src: "images/pexels-reson-life-43382172-13601096.jpg",
-    alt: "Research on climate-resilient greenhouse systems"
+    alt: "Aerospace Engineering living corridor exhibition scene"
   },
-  research_2: {
+  exhibition_6: {
     src: "images/pexels-reson-life-43382172-13601096.jpg",
-    alt: "Research on biodiversity monitoring and ecological systems"
+    alt: "Applied Sciences synthetic biology exhibition scene"
+  },
+  exhibition_7: {
+    src: "images/pexels-reson-life-43382172-13601096.jpg",
+    alt: "Mechanical Engineering biofabrication and robotic nature scene"
+  },
+  exhibition_8: {
+    src: "images/pexels-reson-life-43382172-13601096.jpg",
+    alt: "Technology, Policy and Management governance exhibition scene"
+  },
+  outside: {
+    src: "images/pexels-reson-life-43382172-13601096.jpg",
+    alt: "The Hortus reaching beyond the garden into city and neighbourhood initiatives"
   }
 };
 
